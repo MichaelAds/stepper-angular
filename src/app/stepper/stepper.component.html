@@ -1,0 +1,47 @@
+<section>
+  <div class="stepper">
+
+    <div class="stepper_num">
+      <div class="stepper_num_progress">
+        <span class="stepper_num_progress_cicle" [ngClass]="{'stepper_num_progress_cicle_active': ativar_analise == true}"></span>
+        <span class="stepper_num_progress_bar" [ngClass]="{'stepper_num_progress_bar_active': ativar_aprovacao == true}"></span>
+      </div>
+
+      <div class="stepper_num_text">
+        <p>Em Analise</p>
+      </div>
+    </div>
+
+    <div class="stepper_num">
+      <div class="stepper_num_progress">
+        <span class="stepper_num_progress_cicle" [ngClass]="{'stepper_num_progress_cicle_active': ativar_aprovacao == true}"></span>
+        <span class="stepper_num_progress_bar" [ngClass]="{'stepper_num_progress_bar_active': ativar_caminho == true}"></span>
+      </div>
+
+      <div class="stepper_num_text">
+        <p>Em Aprovação</p>
+      </div>
+    </div>
+
+    <div class="stepper_num">
+      <div class="stepper_num_progress">
+        <span class="stepper_num_progress_cicle" [ngClass]="{'stepper_num_progress_cicle_active': ativar_caminho == true}"></span>
+        <span class="stepper_num_progress_bar" [ngClass]="{'stepper_num_progress_bar_active': ativar_entregue == true}"></span>
+      </div>
+
+      <div class="stepper_num_text">
+        <p>A caminho</p>
+      </div>
+    </div>
+
+    <div class="stepper_num">
+      <div class="stepper_num_progress">
+        <span class="stepper_num_progress_cicle"></span>
+      </div>
+
+      <div class="stepper_num_text">
+        <p>Entregue</p>
+      </div>
+    </div>
+  </div>
+</section>
